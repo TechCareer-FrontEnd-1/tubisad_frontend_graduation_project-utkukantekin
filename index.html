@@ -188,10 +188,10 @@
             <form>
               <div class="container">
                 <div class="row mb-1">
-                  <label for="mail" class="col-form-label col-md-1"
+                  <span class="col-form-label col-md-1" id="mailLabel"
                     ><i class="fa-solid fa-envelope"></i
-                  ></label>
-                  <div class="col-md-4">
+                  ></span>
+                  <div class="col-md-4" id="mailCol">
                     <input
                       type="email"
                       class="form-control"
@@ -200,10 +200,12 @@
                       placeholder="Email"
                     />
                   </div>
-                  <span class="col-md-2 pt-2 d-flex justify-content-center">Or</span>
-                  <label for="userName" class="col-form-label col-md-1"
-                    ><i class="fa-solid fa-user-astronaut"></i></label>
-                  <div class="col-md-4">
+                  <span class="col-md-2 pt-2 d-flex justify-content-center" id="orBetween">Or</span>
+                  <span
+                   class="col-form-label col-md-1"
+                   id="userLabel"
+                    ><i class="fa-solid fa-user-astronaut"></i></span>
+                  <div class="col-md-4" id="userCol">
                       <input
                       type="text"
                       class="form-control"
@@ -228,7 +230,7 @@
                 </div>
                 <div class="row mb-1">
                   <div class="col">
-                    <a href="#">Forgat Password?</a>
+                    <a href="#">Forgot Password?</a>
                   </div>
                   <div class="col d-flex justify-content-end"><a href="#">Need More Help?</a></div>
                 </div>
@@ -260,14 +262,14 @@
             <p class="modal-title fs-3" id="registerTitle">Register</p>
             <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body" id="registryBody">
             <form>
               <div class="container">
                 <div class="row mb-1">
                   <label for="registerMail" class="col-form-label col-md-1"
                     ><i class="fa-solid fa-envelope"></i
                   ></label>
-                  <div class="col-md-11">
+                  <div class="col-md-10">
                     <input
                       type="email"
                       class="form-control"
@@ -276,11 +278,12 @@
                       placeholder="Email"
                     />
                   </div>
+                  <span class="col-md-1 pt-2"><i class="fa-solid fa-circle-minus"></i></span>
                 </div>
                 <div class="row mb-1">
                   <label for="registerUserName" class="col-form-label col-md-1"
                     ><i class="fa-solid fa-user-astronaut"></i></label>
-                  <div class="col-md-11">
+                  <div class="col-md-10" id="inputDiv">
                     <input
                       type="text"
                       class="form-control"
@@ -289,18 +292,21 @@
                       placeholder="Create User Name"
                     />
                   </div>
+                  <span class="col-md-1 pt-2"><i class="fa-solid fa-circle-minus"></i></span>
                 </div>
                 <div class="row mb-1">
                   <label for="firstPassword" class="col-form-label col-md-1"><i class="fa-solid fa-lock"></i></label>
-                  <div class="col-md-11">
+                  <div class="col-md-10">
                     <input type="password" class="form-control" id="firstPassword" name="firstPassword" placeholder="Create Password">
                   </div>
+                  <span class="col-md-1 pt-2"><i class="fa-solid fa-circle-minus"></i></span>
                 </div>
                 <div class="row mb-1">
                   <label for="secondPassword" class="col-form-label col-md-1"><i class="fa-solid fa-check"></i></label>
-                  <div class="col-md-11">
+                  <div class="col-md-10">
                     <input type="password" class="form-control" id="secondPassword" name="secondPassword" placeholder="Enter Password Again">
                   </div>
+                  <span class="col-md-1 pt-2"><i class="fa-solid fa-circle-minus"></i></span>
                 </div>
                 </div>
                 <div class="row mb-1 d-flex justify-content-center">
