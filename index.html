@@ -63,7 +63,7 @@
       <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
         <!-- container wrapper -->
         <div class="container-fluid">
-          <div class="navbar-header">
+          <div class="navbar-header ps-4">
             <button
               class="navbar-toggler"
               type="button"
@@ -78,8 +78,8 @@
             <a class="navbar-brand" href="#">TheGame</a>
           </div>
           <!-- collepsible wrapper -->
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse row" id="navbarCollapse">
+            <ul class="navbar-nav col">
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -104,60 +104,68 @@
                 <a href="section-3" class="nav-link">Classes</a>
               </li>
               <li class="nav-item">
-                <a href="section-4" class="nav-link">Characters</a>
+                <a href="section-4" class="nav-link">Sections</a>
               </li>
               <li class="nav-item">
-                <a href="section-5" class="nav-link">Create A Deck</a>
+                <a href="section-5" class="nav-link">Characters</a>
               </li>
               <li class="nav-item">
-                <a href="section-6" class="nav-link">Contact</a>
+                <a href="section-6" class="nav-link">Create A Deck</a>
+              </li>
+              <li class="nav-item">
+                <a href="section-7" class="nav-link">Contact</a>
               </li>
             </ul>
             <!-- search input -->
-            <form action="" class="d-flex" role="search" id="searchForm">
-              <input
-                type="search"
-                class="form-control me-1"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-success" type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </form>
-
-            <!-- left links -->
-            <div class="d-flex align-items-center mx-3" id="leftLinks">
-              <!-- modals -->
-              <button
-                type="button"
-                class="btn btn-outline-primary me-1"
-                data-bs-toggle="modal"
-                data-bs-target="#login"
-              >
-                <i class="fa-solid fa-arrow-right-to-bracket"></i>
-              </button>
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#register"
-              >
-                Register
-              </button>
-              <a
-                href="https://github.com/utkukantekin"
-                class="btn btn-light mx-3 px-2 py-1"
-                role="button"
-                ><i class="fa-brands fa-github" style="color: rgb(0, 0, 0)"></i
-              ></a>
+            <div class="d-flex justify-content-end col" id="leftSide">
+              <form action="" class="d-flex navbar-form" role="search" id="searchForm">
+                <input
+                  type="search"
+                  class="form-control ui-autocomplate me-1"
+                  placeholder="Search"
+                  aria-label="Search"
+                  id="searchInput"
+                />
+                <button class="btn btn-success" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+  
+              <!-- left links -->
+              <div class="d-flex align-items-center mx-3" id="leftLinks">
+                <!-- modals -->
+                <button
+                  type="button"
+                  class="btn btn-outline-primary me-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#login"
+                >
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#register"
+                >
+                  Register
+                </button>
+                <a
+                  href="https://github.com/utkukantekin"
+                  class="btn btn-light mx-3 px-2 py-1"
+                  role="button"
+                  ><i class="fa-brands fa-github" style="color: rgb(0, 0, 0)"></i
+                ></a>
+            </div>
             </div>
           </div>
-          <!-- collepsible wrapper -->
+          <!-- collepsible wrapper end -->
         </div>
-        <!-- container wrapper -->
+        <!-- container wrapper end -->
       </nav>
     </header>
+
+    <!-- login modal -->
     <div
       class="modal fade"
       id="login"
@@ -168,8 +176,8 @@
     >
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="loginTitle">Login</h5>
+          <div class="modal-header ">
+            <p class="modal-title fs-3" id="loginTitle">Login</p>
             <button
               class="btn-close"
               data-bs-dismiss="modal"
@@ -177,7 +185,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form action="">
+            <form>
               <div class="container">
                 <div class="row mb-1">
                   <label for="mail" class="col-form-label col-md-1"
@@ -192,8 +200,10 @@
                       placeholder="Email"
                     />
                   </div>
-                  <span class="col-md-1 pt-2">Or</span>
-                  <div class="col-md-5">
+                  <span class="col-md-2 pt-2 d-flex justify-content-center">Or</span>
+                  <label for="userName" class="col-form-label col-md-1"
+                    ><i class="fa-solid fa-user-astronaut"></i></label>
+                  <div class="col-md-4">
                       <input
                       type="text"
                       class="form-control"
@@ -202,8 +212,6 @@
                       placeholder="User Name"
                       />
                     </div>
-                    <label for="userName" class="col-form-label col-md-1"
-                      ><i class="fa-solid fa-user-astronaut"></i></label>
                 </div>
                 <div class="row mb-1">
                   <label for="password" class="col-form-label col-md-1"
@@ -218,19 +226,98 @@
                     />
                   </div>
                 </div>
+                <div class="row mb-1">
+                  <div class="col">
+                    <a href="#">Forgat Password?</a>
+                  </div>
+                  <div class="col d-flex justify-content-end"><a href="#">Need More Help?</a></div>
+                </div>
+                <div class="row mb-1 d-flex justify-content-center">
+                  <div class="col-md-10">
+                    <input type="submit" class="form-control btn btn-outline-success" value="ENTER">
+                  </div>
+                </div>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+    <!-- login modal end -->
+
+    <!-- registry modal -->
     <div
       class="modal fade"
       id="register"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="modelTitleId"
+      aria-labelledby="registerTitle"
       aria-hidden="true"
-    ></div>
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-title fs-3" id="registerTitle">Register</p>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="container">
+                <div class="row mb-1">
+                  <label for="registerMail" class="col-form-label col-md-1"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></label>
+                  <div class="col-md-11">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="registerMail"
+                      name="registerMail"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div class="row mb-1">
+                  <label for="registerUserName" class="col-form-label col-md-1"
+                    ><i class="fa-solid fa-user-astronaut"></i></label>
+                  <div class="col-md-11">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="registerUserName"
+                      name="registerUserName"
+                      placeholder="Create User Name"
+                    />
+                  </div>
+                </div>
+                <div class="row mb-1">
+                  <label for="firstPassword" class="col-form-label col-md-1"><i class="fa-solid fa-lock"></i></label>
+                  <div class="col-md-11">
+                    <input type="password" class="form-control" id="firstPassword" name="firstPassword" placeholder="Create Password">
+                  </div>
+                </div>
+                <div class="row mb-1">
+                  <label for="secondPassword" class="col-form-label col-md-1"><i class="fa-solid fa-check"></i></label>
+                  <div class="col-md-11">
+                    <input type="password" class="form-control" id="secondPassword" name="secondPassword" placeholder="Enter Password Again">
+                  </div>
+                </div>
+                </div>
+                <div class="row mb-1 d-flex justify-content-center">
+                  <div class="col-md-10 d-flex justify-content-center" id="passwordCheck">
+                    
+                  </div>
+                </div>
+                <div class="row mb-1 px-2">
+                  <input type="submit" class="form-control btn btn-outline-primary" value="SUBMIT">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- registry modal end -->
   </body>
 </html>
