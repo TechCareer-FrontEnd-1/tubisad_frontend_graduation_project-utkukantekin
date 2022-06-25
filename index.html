@@ -265,7 +265,7 @@
           <div class="modal-body" id="registryBody">
             <form>
               <div class="container">
-                <div class="row mb-1">
+                <div class="row mb-1 g-0">
                   <label for="registerMail" class="col-form-label col-md-1"
                     ><i class="fa-solid fa-envelope"></i
                   ></label>
@@ -278,9 +278,11 @@
                       placeholder="Email"
                     />
                   </div>
-                  <span class="col-md-1 pt-2"><i class="fa-solid fa-circle-minus"></i></span>
+                  <div class="col-md-1 pt-1 fs-4 ps-2 signHolder" id="signMail">
+                    <i class="fa-solid fa-circle-minus"></i>
+                  </div>
                 </div>
-                <div class="row mb-1">
+                <div class="row mb-1 g-0">
                   <label for="registerUserName" class="col-form-label col-md-1"
                     ><i class="fa-solid fa-user-astronaut"></i></label>
                   <div class="col-md-10" id="inputDiv">
@@ -292,30 +294,35 @@
                       placeholder="Create User Name"
                     />
                   </div>
-                  <span class="col-md-1 pt-2"><i class="fa-solid fa-circle-minus"></i></span>
+                  <div class="col-md-1 pt-1 signHolder fs-4 ps-2" id="signUName">
+                    <i class="fa-solid fa-circle-minus"></i>
+                  </div>
                 </div>
-                <div class="row mb-1">
+                <div class="row mb-1 g-0">
                   <label for="firstPassword" class="col-form-label col-md-1"><i class="fa-solid fa-lock"></i></label>
                   <div class="col-md-10">
                     <input type="password" class="form-control" id="firstPassword" name="firstPassword" placeholder="Create Password">
                   </div>
-                  <span class="col-md-1 pt-2"><i class="fa-solid fa-circle-minus"></i></span>
+                  <div class="col-md-1 pt-1 signHolder fs-4 ps-2" id="signFPassword">
+                    <i class="fa-solid fa-circle-minus"></i>
+                  </div>
                 </div>
-                <div class="row mb-1">
+                <div class="row mb-1 g-0">
                   <label for="secondPassword" class="col-form-label col-md-1"><i class="fa-solid fa-check"></i></label>
                   <div class="col-md-10">
                     <input type="password" class="form-control" id="secondPassword" name="secondPassword" placeholder="Enter Password Again">
                   </div>
-                  <span class="col-md-1 pt-2"><i class="fa-solid fa-circle-minus"></i></span>
+                  <div class="col-md-1 pt-1 signHolder fs-4 ps-2" id="signSPassword">
+                    <i class="fa-solid fa-circle-minus"></i>
+                  </div>
                 </div>
                 </div>
                 <div class="row mb-1 d-flex justify-content-center">
-                  <div class="col-md-10 d-flex justify-content-center" id="passwordCheck">
-                    
-                  </div>
+                  <div class="col-md-10 d-flex justify-content-center" id="passwordCheck"></div>
                 </div>
                 <div class="row mb-1 px-2">
-                  <input type="submit" class="form-control btn btn-outline-primary" value="SUBMIT">
+                  <button class="btn btn-primary" disabled id="regSubmit">SUBMIT</button>
+                  <!-- <input type="submit" class="form-control btn btn-outline-primary" disabled value="SUBMIT" > -->
                 </div>
               </div>
             </form>

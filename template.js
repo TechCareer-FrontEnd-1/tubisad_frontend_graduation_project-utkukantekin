@@ -41,5 +41,79 @@ $(function(){
 })
 
 ////////////////////////////////
-// registry madal
+// registry modal
 ////////////////////////////////
+$(function(){
+    validateMail();
+    validateUserName();
+    validatePassword();
+});
+
+/////////////
+//mail
+/////////////
+
+let validateMail = ()=>{
+    let pattern = /@/g;
+
+    $("#registerMail").keyup(()=>{
+        if (pattern.test($("#registerMail").val())) {
+            $("#signMail").css("color","rgb(63 255 0)");
+            $("#signMail").html("<i class=\"fa-solid fa-circle-check\"></i>");
+        }
+        if (!$("#registerMail").val()) {
+            $("#signMail").css("color","rgb(220, 53, 69)");
+            $("#signMail").html("<i class=\"fa-solid fa-circle-minus\"></i>");
+        };
+    });
+    
+    // focusout yada blur çalışmıyor çözemedim.
+    // $("#registerMail").focusout()(()=>{
+    //     if (!$("#registerMail").val()) {
+    //         $("#signMail").css("color","rgb(220, 53, 69)")
+    //         $("#signMail").html("<i class=\"fa-solid fa-circle-minus\"></i>")
+    //     }
+    // });
+}
+
+///////////
+//user name
+///////////
+
+let validateUserName = ()=>{
+    $("#registerUserName").keyup(()=>{
+        if ($("#registerUserName").val().length>5) {
+            $("#signUName").css("color","rgb(63 255 0)");
+            $("#signUName").html("<i class=\"fa-solid fa-circle-check\"></i>");
+        }else{
+            $("#signUName").css("color","rgb(220, 53, 69)");
+            $("#signUName").html("<i class=\"fa-solid fa-circle-minus\"></i>");
+        };
+    });
+}
+
+///////////
+// password 
+///////////
+
+let validatePassword = ()=>{
+    let pPattern = /[a-zA-Z]/g;
+    // /[a-zA-Z]+ [0-9]+/i; çalışmıyor
+    
+    $("#firstPassword , #secondPassword").keyup(()=>{
+        if ( pPattern.test($("#firstPassword")) && $("#firstPassword").val().length>5) {
+            $("#signFPassword").css("color","rgb(63 255 0)");
+            $("#signFPassword").html("<i class=\"fa-solid fa-circle-check\"></i>");
+        }else{
+            $("#signFPassword").css("color","rgb(220, 53, 69)");
+            $("#signFPassword").html("<i class=\"fa-solid fa-circle-minus\"></i>");
+        };
+        if ($("#firstPassword").val() == $("#secondPassword").val()) {
+            $("#signSPassword").css("color","rgb(63 255 0)");
+            $("#signSPassword").html("<i class=\"fa-solid fa-circle-check\"></i>");
+        }else{
+            $("#signSPassword").css("color","rgb(220, 53, 69)");
+            $("#signSPassword").html("<i class=\"fa-solid fa-circle-minus\"></i>");
+        }
+    });
+}
