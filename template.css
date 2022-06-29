@@ -7,6 +7,7 @@
   
 body {
     /* font-family: 'Quicksand', sans-serif; */
+    min-height: 100%;
     font-family: 'Montserrat', sans-serif;
     position: relative;
     background: #edeff1;
@@ -38,6 +39,23 @@ p {
     overflow: hidden;
 }
 
+/* main */
+
+.main{
+    padding-top: 3rem;
+}
+
+/* NavBar */
+
+nav:hover{
+    opacity: 1 !important;
+    height: 3rem !important;
+}
+
+.navbar{
+    height: 3rem;
+}
+
 .navbar-brand>img{
     width: 3rem;
 }
@@ -62,6 +80,79 @@ p {
     font-size: .8rem;
 }
 
+/* modal */
 .signHolder{
     color: rgb(220, 53, 69);
+}
+
+/* jumbotron */
+.jumbotron-fluid{
+    min-height: 100vh;
+    background-image: url("/assets/images/game_console.jpg");
+    background-size: cover;
+}
+
+.jumbotron-fluid>div{
+    padding-top: 9vh;
+}
+
+/* Scroll Up Button */
+
+#scrollUp{
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+#scrollUp:hover{
+    box-shadow: 5px 10px 8px #888888 ;
+}
+
+/* footer */
+
+footer{
+    min-height: 20rem;
+    padding-top: 1rem;
+    background-color: rgb(58, 58, 58);
+}
+
+#shareBtnWrapper{
+    min-height: 6rem;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+#shareBtnWrapper>.btn{
+    position: absolute;
+    display: inline-flex;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+}
+
+.shareItem{
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.shareLink{
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+.footerTab>p{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
 }
