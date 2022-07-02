@@ -169,6 +169,23 @@ let scrollFunc = ()=>{
 window.onscroll = scrollFunc;
 
 ////////////////////////////////
+//// bxslider
+////////////////////////////////
+
+$(document).ready(function(){
+    $(".bxslider").bxSlider({
+        pager:false,
+        controls:false,
+        auto:true,
+    });
+    $("#bxAbout").bxSlider({
+        pager:true,
+        controls:true,
+        auto:false,
+    });
+  });
+
+////////////////////////////////
 //// footer
 ////////////////////////////////
 //// share button

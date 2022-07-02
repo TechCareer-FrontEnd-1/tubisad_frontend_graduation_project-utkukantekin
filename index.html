@@ -51,6 +51,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+
     <!-- External CSS -->
     <link rel="stylesheet" href="/template.css" />
 
@@ -337,8 +340,19 @@
       <div class="jumbotron-fluid">
         <div class="container">
           <div class="p-5 text-center text-light" style="opacity: 0.7;">
-            <h1 class="text-uppercase display-3">Welcome</h1>
-            <h2>To theGame</h2>
+            <div class="d-flex justify-content-center">
+              <ul class="bxslider m-0 p-0">
+                <li>
+                  <p class="display-3 slide-text">Welcome</p>
+                  <p class="fs-4 slide-text">To</p>
+                </li>
+                <li>
+                  <p class="display-3 slide-text">get ready</p>
+                  <p class="fs-4 slide-text">for</p>
+                </li>
+              </ul>
+            </div>
+            <h1 class="display-3">TheGame</h1>
             <a href="#" class="btn btn-outline-warning btn-sm shadow">Follow Us</a>
           </div>
         </div>
@@ -346,6 +360,14 @@
     </section>
     <!-- jumbotron end -->  
     <div class="main container">
+      <!-- about -->  
+      <section class="full-wiev" >
+        <ul id="bxAbout">
+          <li id="aboutGame"></li>
+          <li id="aboutTeam"></li>
+        </ul>
+      </section>
+      <!--  -->  
       <!--  -->  
       <section></section>
       <!--  -->  
@@ -356,11 +378,8 @@
       <section></section>
       <!--  -->  
       <!--  -->  
-      <section></section>
-      <!--  -->  
-      <!--  -->  
-      <section>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates a eveniet at doloribus iusto rerum! Recusandae nobis, quis dolores culpa minus reprehenderit nisi placeat, maiores dolor necessitatibus fugit. Officia, soluta.
+      <section class="half-wiev">
+        <p class="line_clamp3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates a eveniet at doloribus iusto rerum! Recusandae nobis, quis dolores culpa minus reprehenderit nisi placeat, maiores dolor necessitatibus fugit. Officia, soluta.
         Nostrum, expedita non sint, impedit eius mollitia facilis libero ipsa in ipsum esse blanditiis aspernatur similique maiores, ex distinctio nemo laboriosam repudiandae repellendus id! Tenetur consequatur blanditiis aperiam laborum quos?
         Debitis deserunt ipsum incidunt ut voluptate minus saepe ratione omnis, officia adipisci a odit aperiam. Tempora, quam ipsa sint quisquam quas iure rerum est? Aspernatur quasi exercitationem dignissimos nostrum ullam.
         Ea, porro ad. Dolore iusto quisquam voluptatibus nulla consequatur voluptates tempora dicta dolorum libero. Sequi doloremque voluptate itaque repellendus aut porro temporibus, quis quaerat voluptas sit animi praesentium! Recusandae, reiciendis.

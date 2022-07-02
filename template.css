@@ -45,6 +45,13 @@ p {
     padding-top: 3rem;
 }
 
+.full-wiev{
+    min-height: 100vh;
+}
+
+.half-wiev{
+    min-height: 50vh;
+}
 /* NavBar */
 
 nav:hover{
@@ -68,6 +75,7 @@ nav:hover{
     height: 2rem;
 }
 
+/* search form */
 #searchForm>input::placeholder{
     font-size: .8rem;
 }
@@ -90,10 +98,26 @@ nav:hover{
     min-height: 100vh;
     background-image: url("/assets/images/game_console.jpg");
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .jumbotron-fluid>div{
     padding-top: 9vh;
+}
+
+.slide-text{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.bx-wrapper{
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin: 0;
 }
 
 /* Scroll Up Button */
