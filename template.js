@@ -208,3 +208,19 @@ $(function(){
         };
     });
 });
+
+//////////
+//// show date button
+//////////
+
+let showDate = ()=>{
+    let date = new Date();
+    $("#dateHere").toggleClass("d-none d-block");
+    $("#dateHere").html(`${date.toDateString()}`);
+    $("#dateBtn").toggleClass("active");
+    if ($("#dateBtn").hasClass("active")) {
+        $("#dateBtn").html("Hide Date!");
+    }else{
+        $("#dateBtn").html("Show Date!");
+    }
+};

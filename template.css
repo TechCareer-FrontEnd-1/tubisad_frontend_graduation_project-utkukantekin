@@ -141,6 +141,16 @@ footer{
     background-color: rgb(58, 58, 58);
 }
 
+.footerTab{
+    margin-bottom: 5rem;
+    min-height: 8rem;
+    padding: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .15);;
+    color: rgb(255, 255, 255);
+}
+
+/* share btn */
+
 #shareBtnWrapper{
     min-height: 6rem;
     position: relative;
@@ -175,8 +185,16 @@ footer{
     height: 40px;
 }
 
-.footerTab>p{
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
+/* show date */
+
+#dateBtn{
+    height: 2.3rem;
+    min-width: 7rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+#dateHere{
+    color: rgb(220 53 69);
 }

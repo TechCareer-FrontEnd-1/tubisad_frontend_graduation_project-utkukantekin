@@ -50,8 +50,11 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-
+    
+    <!-- bxslider JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <!-- bxslider css -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
 
     <!-- External CSS -->
@@ -434,9 +437,12 @@
       <!-- tab 2 -->
       <section>
         <div class="container">
-          <div class="row gx-3">
-            <div class="col-md-3 footerTab">
-              <p>a</p>
+          <div class="row gx-0">
+            <div class="col-md-3 footerTab text-center">
+              <div class="d-flex justify-content-center" id="dateBtnHolder">
+                <button onclick="showDate()" class="btn btn-outline-danger" id="dateBtn">Show Date!</button> 
+              </div>
+              <div class="d-none my-3" id="dateHere"></div>
             </div>
             <div class="col-md-3 footerTab">
               <p>a</p>
@@ -445,7 +451,14 @@
               <p>a</p>
             </div>
             <div class="col-md-3 footerTab">
-              <p>a</p>
+              <h6 class="text-uppercase mb-3">Contact</h6>
+              <p class="mx-0"><i class="fa-solid fa-earth-africa"></i> Turkey</p>
+              <p class="mx-0"><i class="fa-solid fa-envelope-open-text"></i>
+                  <a href="mailto:utkukantekin97@gmail.com">utkukantekin97@gmail.com</a>
+              </p>
+              <p class="mx-0"><i class="fa-solid fa-mobile-retro"></i>
+                  <a href="tel:905522542993">+90 552 254 29 93</a>
+              </p>
             </div>
 
           </div>
