@@ -179,7 +179,7 @@ $(document).ready(function(){
         auto:true,
     });
     $("#bxAbout").bxSlider({
-        pager:true,
+        pager:false,
         controls:true,
         auto:false,
     });
