@@ -178,11 +178,12 @@ $(document).ready(function(){
         controls:false,
         auto:true,
     });
-    $("#bxAbout").bxSlider({
+    $("#bxAbout, #bxSecs").bxSlider({
         pager:false,
         controls:true,
         auto:false,
     });
+    
   });
 
 ////////////////////////////////

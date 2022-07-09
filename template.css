@@ -147,6 +147,144 @@ nav:hover{
     position: relative;
 }
 
+/* sections section */
+#sectionsSec{
+    position: relative;
+}
+
+#sectionsSec div{
+    height: 100%;
+}
+
+#sectionsSec::before{
+    content: ' ';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    background-image: url("assets/images/lotrMap.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#wrapSecs{
+    position: relative;
+}
+
+#sectionsSec img{
+    height: 60vh;
+    border-radius: 30%;
+}
+
+/* mordor */
+
+#mordorSec{
+    position: relative;
+}
+
+#mordorSec::before{
+    content: ' ';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    background-color: rgb(210 0 0);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#wrapMordor{
+    position: relative;
+}
+
+/* gondor */
+
+#gondorSec{
+    position: relative;
+}
+
+#gondorSec::before{
+    content: ' ';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    background-color: rgb(36 70 138);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#wrapGondor{
+    position: relative;
+}
+
+/* rohan */
+
+#rohanSec{
+    position: relative;
+}
+
+#rohanSec::before{
+    content: ' ';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    background-color: rgb(51 105 30);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#wrapRohan{
+    position: relative;
+}
+
+/* rivendell */
+
+#rivendellSec{
+    position: relative;
+}
+
+#rivendellSec::before{
+    content: ' ';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    background-color: rgb(10 113 103);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#wrapRivendell{
+    position: relative;
+}
+
 /* Scroll Up Button */
 
 #scrollUp{
