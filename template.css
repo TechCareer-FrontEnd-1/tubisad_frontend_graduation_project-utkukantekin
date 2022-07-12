@@ -19,6 +19,8 @@ html {
 
 ul {
     list-style-type: none;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
 }
 
 a {
@@ -29,6 +31,10 @@ p {
     text-align: justify;
     margin-left: 0.7rem;
     margin-right: 0.7rem;
+}
+
+section div{
+    height: 100%;
 }
 
 /* line-clamp */
@@ -152,10 +158,6 @@ nav:hover{
     position: relative;
 }
 
-#sectionsSec div{
-    height: 100%;
-}
-
 #sectionsSec::before{
     content: ' ';
     position: absolute;
@@ -168,7 +170,7 @@ nav:hover{
     background-image: url("assets/images/lotrMap.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-size: cover;
+    background-size:100% auto;
     background-attachment: fixed;
 }
 
@@ -282,6 +284,32 @@ nav:hover{
 }
 
 #wrapRivendell{
+    position: relative;
+}
+
+/* classes section */
+
+#classesSec{
+    position: relative;
+}
+
+#classesSec::before{
+    content: ' ';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    background-image: url("assets/images/lotrMap.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#wrapClasses{
     position: relative;
 }
 
