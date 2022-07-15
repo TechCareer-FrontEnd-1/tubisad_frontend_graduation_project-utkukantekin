@@ -143,9 +143,7 @@ nav:hover{
     height: 100%;
     opacity: .9;
     background-color: rgb(34 47 50);
-    background-repeat: no-repeat;
     background-position: 50% 0;
-    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -167,10 +165,10 @@ nav:hover{
     width: 100%;
     height: 100%;
     opacity: .9;
-    background-image: url("assets/images/lotrMap.jpg");
+    background-image: url("assets/images/lotrMap2.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-size:100% auto;
+    background-size:cover;
     background-attachment: fixed;
 }
 
@@ -199,10 +197,6 @@ nav:hover{
     height: 100%;
     opacity: .4;
     background-color: rgb(210 0 0);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 #wrapMordor{
@@ -225,10 +219,6 @@ nav:hover{
     height: 100%;
     opacity: .4;
     background-color: rgb(36 70 138);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 #wrapGondor{
@@ -251,10 +241,6 @@ nav:hover{
     height: 100%;
     opacity: .4;
     background-color: rgb(51 105 30);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 #wrapRohan{
@@ -277,10 +263,6 @@ nav:hover{
     height: 100%;
     opacity: .4;
     background-color: rgb(10 113 103);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 #wrapRivendell{
@@ -302,11 +284,7 @@ nav:hover{
     width: 100%;
     height: 100%;
     opacity: .9;
-    background-image: url("assets/images/lotrMap.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: rgb(237 239 241);
 }
 
 #wrapClasses{

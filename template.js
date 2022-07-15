@@ -225,3 +225,6 @@ let showDate = ()=>{
         $("#dateBtn").html("Show Date!");
     }
 };
+
+console.log(window.innerHeight);
+console.log(window.innerWidth);

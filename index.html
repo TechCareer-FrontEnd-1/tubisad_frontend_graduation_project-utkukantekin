@@ -63,12 +63,6 @@
 
     <!-- External JS -->
     <script src="/template.js"></script>
-
-    <!-- WOW.js -->
-    <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
   </head>
   <body>
     <!-- navbar -->
@@ -126,7 +120,7 @@
                 <a href="#section-6" class="nav-link">Create A Deck</a>
               </li>
               <li class="nav-item">
-                <a href="#section-7" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-link">Contact</a>
               </li>
             </ul>
             <!-- search input -->
@@ -583,30 +577,89 @@
       <!-- sections end -->  
       <!-- classes -->  
       <section class="full-wiev" id="classesSec">
-        <div id="wrapClasses">
-          <ul id="bxClasses">
-            <li>
-              <div id="warriors" ></div>
-            </li>
-            <li></li>
-          </ul>
+        <div id="wrapClasses" class="pt-5">
+          <div class="row" >
+            <div class="col">
+              <p class="display-6 text-center text-uppercase">Warrıors</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime blanditiis, delectus tempore nemo ratione.</p>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center" style="min-height:40vh">
+              <img src="assets/images/warrior-helmet.png" alt="warrior-helmet">
+            </div>
+          </div>
+          <div>
+            <hr style="height:4px;border-width:0;color:gray;background-color:gray">
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-center align-items-center" style="min-height:40vh">
+              <img src="assets/images/katana.png" alt="katana">
+            </div>
+            <div class="col">
+              <p class="display-6 text-center text-uppercase">Assassıns</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ad ullam praesentium fugiat. Earum, magnam.</p>
+            </div>
+          </div>
         </div>
-
+        <hr>
       </section>
-      <!--  -->  
-      <!--  -->  
+      <!-- classes end -->  
+      <!--  -->
       <section></section>
       <!--  -->  
-      <!--  -->  
-      <section class="half-wiev">
+      <!-- contact -->  
+      <section class="full-wiev" id="contact">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center text-uppercase text-dark">Contact</h2>
+                </div>
+                <div class="col-md-6">
+                    <form action="#!" id="contact_form">
+                        <div class="row gx-0">
+                            <div class="col-md-6">
+                                <input type="text" placeholder="First Name" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Last Name" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" placeholder="example@xyz.com" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Number" class="form-control" pattern="[0-9]+">
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message"
+                                        placeholder="Your message..." required=""></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <button type="reset" class="btn btn-danger">Clear </button>
+                                    <button type="submit" class="btn btn-primary">Send Message </button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div id="map">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="420px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+          </div>
       </section>
-      <!--  -->  
+      <!-- contact end -->  
       <a href="#header" class="btn btn-warning" id="scrollUp">Up!</a>
     </div>
 
     <footer>
       <!-- footer share -->
-      <section class="" id="shareBtnWrapper">
+      <section id="shareBtnWrapper">
         <button class="btn btn-warning" id="shareBtn"><i class="fa-solid fa-share-nodes"></i></button>
         <ul class="shareList">
           <li class="shareItem d-none" id="shareIns">
@@ -647,12 +700,9 @@
                   <a href="tel:905522542993">+90 552 254 29 93</a>
               </p>
             </div>
-
           </div>
         </div>
       </section>
-
-
     </footer>
   </body>
 </html>
