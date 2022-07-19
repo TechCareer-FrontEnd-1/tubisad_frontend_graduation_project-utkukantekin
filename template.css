@@ -2,11 +2,10 @@
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 body {
-  /* font-family: 'Quicksand', sans-serif; */
+  font-family: 'Quicksand', sans-serif; 
   min-height: 100%;
   font-family: "Montserrat", sans-serif;
   position: relative;
